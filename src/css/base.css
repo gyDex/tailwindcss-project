@@ -1,0 +1,24 @@
+@import '../assets/fonts/montserrat2/montserrat.css';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+:root {
+    --grey-color: #F7F7F6;
+    --dark-color: #171C1F;
+    --red-color:#FF4E52;
+    --yellow-color:#FFC14E;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background: #F5F5F5;
+    /* overflow: hidden; */
+    /* overflow: hidden; */
+    /* background-color: var(--main_color_background); */
+}

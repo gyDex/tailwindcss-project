@@ -1,0 +1,283 @@
+@import 'vanilla-calendar-pro/styles/index.css';
+
+.block__master_info_calendar_week_list{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7,26px);
+    grid-auto-flow: column;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.block__master_info_calendar_day_list{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    display: grid;
+    /* height: 1000px; */
+    row-gap: 5px;
+    grid-template-columns: repeat(7,26px);
+    grid-template-rows: repeat(auto-fit,minmax(26px,1fr));
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.block__master_info_calendar_week_list_item, .block__master_info_calendar_day_list_item {
+    opacity: 0.3;
+	font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.5px;
+    color: var(--dark-color);
+}
+.block__master_info_calendar_day_list_item_active {
+	font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.5px;
+    color: var(--dark-color);
+
+    opacity: 1 !important;
+}
+.block__master_info_calendar_day_list_item_select {
+    opacity: 1 !important;
+	
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.5px;
+
+    background-color: var(--dark-color);
+
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+
+    border-radius: 37px;
+
+    color: #FFFFFE;
+}
+
+.block__master_info_name {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24.38px;
+    letter-spacing: 0%;
+}
+.block__master_info_subtitle {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.5px;
+    letter-spacing: 0%;
+    color: var(--dark-color);    
+}
+.block__master_info_profession {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.07px;
+    letter-spacing: 0%;
+    opacity: 0.5; 
+}
+.block_master_info_record_date {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+}
+.block__master_info_title {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 24px;    
+    
+    color:#171C1F;
+}
+
+.block__master_info_about_title {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.5px; 
+}
+
+.block__master_info_about_description {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.63px;
+    letter-spacing: 0%;
+    text-align: justify;    
+}
+
+.block__master_info_skills {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, 120px);
+    flex-shrink: 0;
+    grid-auto-flow: dense;
+    row-gap: 15px;
+}
+
+@media (width <= 320px) {
+    .block__master_info_skills {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, 100px);
+        flex-shrink: 0;
+        grid-auto-flow: dense;
+        row-gap: 15px;
+    }
+    
+}
+
+.block__master_info_skills_item:nth-child(4n + 1) {
+    grid-column: 3 / span 4;
+  }
+
+.block__master_info_skills_item {
+    flex-shrink: 0;
+    background-color: var(--grey-color);
+    height: 40px;
+    display: block;
+
+    width: fit-content;
+
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.5px;
+
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 15px;
+
+    border-radius: 37px;
+}
+
+.block__master_info_btn-subscribe {
+    width: 100%;
+    height: 56px;
+
+    display: flex;
+    width: inherit;
+    max-width: 550px;
+    justify-content: center;
+    
+    bottom: 25px;
+    background-color: var(--dark-color);
+    border-radius: 65px;
+
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFE;
+    box-shadow: 2px 5px 10.6px 0px #171C1F33;
+
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.5px;
+}
+
+.block__master_info_list_item_title {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.07px;
+    letter-spacing: 0%;
+
+}
+
+.block__master_info_input {
+    margin-top: 25px;
+
+    width: 100%;
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+
+    border-radius: 7px;
+
+    color: var(--dark-color);
+    background-color: var(--grey-color);
+}
+.block__register_textarea {
+    margin-top: 25px;
+
+    width: 100%;
+    height: 168px;
+
+    max-height: 200px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+
+    border-radius: 7px;
+
+    color: var(--dark-color);
+    background-color: var(--grey-color);
+}
+.block__register_textarea:focus-within {
+    border: none;
+    outline: none; 
+}
+
+
+.block__master_info_input:focus-within {
+    border: none;
+    outline: none; 
+}
+
+.block__master_info_input::placeholder {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.block__register_popup {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    z-index: -100;
+
+    top: 0;
+
+    transition: 0.4s;
+}
+.block__register_popup_content_active {
+    transform: translateY(0%) !important;
+}
+.block__register_popup_active {
+    z-index: 100 !important;
+}
+.block__register_popup_backdrop {
+    position: absolute;
+    /* z-index: 1000; */
+    width: inherit;
+    height: inherit;
+    background-color: red;
+}
+.block__register_popup_content {
+    position: absolute;
+    bottom: 25px;
+    box-shadow: 2px 5px 10.6px 0px #171C1F33;
+    border-radius: 25px;
+    transition: 0.4s;
+
+    transform: translateY(150%);
+}
