@@ -3,109 +3,85 @@ import '../../css/main.css'
 import '../../css/components/block_master_info/block_master_info.css';
 
 import '../../css/components/block_register/block_register.css'
+// const master_record = document.getElementById('popup_detailed_record');
+// const master_record_btn = document.getElementById('master_record_btn');
 
-import './detailed/detailed.js'
-
-import { Calendar, Options } from 'vanilla-calendar-pro';
-
-
-const popupCancel = document.getElementById('popup_cancel');
-const popupCancelNext = document.getElementById('popup_cancel_next');
-const popupCancelContent = document.getElementsByClassName('popup_cancel_content');
-const popupCancelBackdrop = document.getElementById('popup_cancel_backdrop');
-const popupCancelCloseModal = document.getElementsByClassName('popup_cancel_close_modal');
-
-let indexSelectPopupCancel =  0;
-
-const master_record = document.getElementById('master_record');
-
-const buttons_cancel = master_record.getElementsByTagName('button');
-
-const options = {
-    layouts: {
-        default: `
-          <div class="vc-header" data-vc="header" role="toolbar" aria-label="Calendar Navigation">
-            <div class="vc-header__content"  style="justify-content: start !important;" data-vc-header="content">
-             <#Month />
-            </div>
-            <#ArrowPrev />
-            <#ArrowNext />
-          </div>
-          <div class="vc-wrapper" data-vc="wrapper">
-            <#WeekNumbers />
-            <div class="vc-content" data-vc="content">
-              <#Week />
-              <#Dates />
-              <#DateRangeTooltip />
-            </div>
-          </div>
-          <#ControlTime />
-        `,
-      },
-    locale: {
-      months: {
-        short: ['Vör', 'Thors', 'Skadi', 'Freya', 'Baldur', 'Njord', 'Tyr', 'Frigg', 'Odin', 'Loki', 'Hel', 'Idunn'],
-        long: [
-          'Январь',
-          'Февраль',
-          'Март',
-          'Апрель',
-          'Май',
-          'Июнь',
-          'Июль',
-          'Frigmánuðr',
-          'Odinmánuðr',
-          'Lokimánuðr',
-          'Helmánuðr',
-          'Idunnmánuðr',
-        ],
-      },
-      weekdays: {
-        short: ['Sunna', 'Mani', 'Tiw', 'Woden', 'Thor', 'Frigg', 'Saturn'],
-        long: ['Sunnandæg', 'Manadæg', 'Tiwesdæg', 'Wodensdæg', 'Thorsdæg', 'Friggsdæg', 'Saturnsdag'],
-      },
-    },
-  };
+// const buttons_detailed = master_record.getElementsByClassName('popup_detailed_btn');
+// const popupDetailed = document.getElementById('popup_detailed');
+// const popupDetailedNext = document.getElementById('popup_cancel_next');
+// const popupDetailedContent = document.getElementsByClassName('popup_detailed_record_content');
+// const popupDetailedBackdrop = document.getElementById('popup_detailed_record_backdrop');
+// const popupDetailedCloseModal = document.getElementsByClassName('popup_detailed_record_close_modal');
+// let indexSelectPopupRecord =  0;
   
-//   const calendar = new Calendar('#calendar', options);
-//   calendar.init();
+
+// master_record_btn.addEventListener('click', onClickButtonCancel)
+
+// for (let index = 0; index < buttons_detailed.length; index++) {
+//   buttons_detailed[index].addEventListener('click', onClickButtonCancel)
+// }
+
+// const stages_record = document.getElementsByClassName('stage_record');
+// const buttons_next_stage_record = document.getElementsByClassName('button_next_stage_record');
+
+// let indexStagerRegister = 0;
+
+
+// buttons_next_stage_record[indexStagerRegister].addEventListener('click',onClickNextStageRegister)
+// function onClickNextStageRegister() {
+//     if(buttons_next_stage_record.length > indexStagerRegister + 1)
+//     {
+//         buttons_next_stage_record[indexStagerRegister].removeEventListener('click',onClickNextStageRegister)
+//         stages_record[indexStagerRegister].classList.add('hidden');
+//         indexStagerRegister += 1;
+
+        
+//             stages_record[indexStagerRegister].classList.remove('hidden');
+
+        
+
+//         if(buttons_next_stage_record[indexStagerRegister] !== undefined) {
+            
+//             buttons_next_stage_record[indexStagerRegister].addEventListener('click',onClickNextStageRegister)
+//         }
+//     }
+// }
+
+
+
+// function onClickButtonCancel() {
+//   console.log('jdfkdfjk');
   
-for (let index = 0; index < buttons_cancel.length; index++) {
-    buttons_cancel[index].addEventListener('click', onClickButtonCancel)
+//     popupDetailed.classList.add('block__register_popup_active')
+
+//     popupDetailedContent[indexSelectPopupRecord].classList.add('block__register_popup_content_active');
+
+//     popupDetailedCloseModal[indexSelectPopupRecord].addEventListener('click',onClickButtonCloseCancel);
+//     popupDetailedNext.addEventListener('click', onClickButtonCloseCancelNext);
+//     popupDetailedBackdrop.addEventListener('click',onClickButtonCloseCancel);
+
+// }
+
+// function onClickButtonCloseCancelNext () {   
+//     popupDetailedCloseModal[indexSelectPopupRecord].removeEventListener('click',onClickButtonCloseCancel);
+//     popupDetailedContent[indexSelectPopupRecord].classList.remove('block__register_popup_content_active');
+//     indexSelectPopupRecord += 1;
     
-}
+//     popupDetailedCloseModal[indexSelectPopupRecord].addEventListener('click', onClickButtonCloseCancelModal);
+//     popupDetailedContent[indexSelectPopupRecord].classList.add('block__register_popup_content_active');
+// }
 
-function onClickButtonCancel() {
-    popupCancel.classList.add('block__register_popup_active')
-
-    popupCancelContent[indexSelectPopupCancel].classList.add('block__register_popup_content_active');
-
-    popupCancelCloseModal[indexSelectPopupCancel].addEventListener('click',onClickButtonCloseCancel);
-    popupCancelNext.addEventListener('click', onClickButtonCloseCancelNext);
-    popupCancelBackdrop.addEventListener('click',onClickButtonCloseCancel);
-
-}
-
-function onClickButtonCloseCancelNext () {   
-    popupCancelCloseModal[indexSelectPopupCancel].removeEventListener('click',onClickButtonCloseCancel);
-    popupCancelContent[indexSelectPopupCancel].classList.remove('block__register_popup_content_active');
-    indexSelectPopupCancel += 1;
+// function onClickButtonCloseCancelModal () {
+//     popupDetailed.classList.remove('block__register_popup_active')
     
-    popupCancelCloseModal[indexSelectPopupCancel].addEventListener('click', onClickButtonCloseCancelModal);
-    popupCancelContent[indexSelectPopupCancel].classList.add('block__register_popup_content_active');
-}
+//     popupDetailedContent[indexSelectPopupRecord].classList.remove('block__register_popup_content_active');
+//     indexSelectPopupRecord = 0;
+//     popupDetailedCloseModal[indexSelectPopupRecord].removeEventListener('click', onClickButtonCloseCancelModal);
+// }
 
-function onClickButtonCloseCancelModal () {
-    popupCancel.classList.remove('block__register_popup_active')
-    
-    popupCancelContent[indexSelectPopupCancel].classList.remove('block__register_popup_content_active');
-    indexSelectPopupCancel = 0;
-    popupCancelCloseModal[indexSelectPopupCancel].removeEventListener('click', onClickButtonCloseCancelModal);
-}
+// function onClickButtonCloseCancel() {
+//     popupDetailed.classList.remove('block__register_popup_active')
 
-function onClickButtonCloseCancel() {
-    popupCancel.classList.remove('block__register_popup_active')
-
-    popupCancelContent[indexSelectPopupCancel].classList.remove('block__register_popup_content_active');
-}
+//     popupDetailedContent[indexSelectPopupRecord].classList.remove('block__register_popup_content_active');
+// }
 

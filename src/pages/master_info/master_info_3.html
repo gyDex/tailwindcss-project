@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bg-[#F5F5F5] relative flex justify-center w-full">
+        <div class="relative lg:rounded-[10px] bg-white w-full max-w-[600px]">
+            <section class="stage_record relative w-full p-5 min-h-[100svh] flex flex-col bg-white pb-[100px]">
+                <div class="flex-grow-0">
+                    <div class="w-[100%] flex-col  flex justify-start">
+                        <h1 class="block__master_info_title">Запись к мастеру</h1>
+                        <h1 class="block__master_info_subtitle">Расскажите немного о себе.</h1>
+                    </div>
+
+                    <input type="text" class="block__master_info_input"  placeholder="Имя">
+                    <input type="text" class="block__master_info_input"  placeholder="Телефон">
+                    <a href="/master_calendar.html" type="text" class="block__master_info_calendar" >
+                        <span  class="block__master_info_calendar_text" >
+                            Даты и время
+                        </span>
+
+                        <img src="../../assets/image/master_info/arrow_calendar.svg" alt="">
+                    </a>
+
+                </div>  
+                
+                <div class="relative flex w-full h-auto justify-center mb-[0px] bottom-0">
+                    <div class="fixed px-5   w-full max-w-[550px] bottom-0 ">
+                        <button id="master_record_btn" class="button_next_stage_record block__master_info_btn-subscribe mb-[50px]">Записаться</button>
+                    </div> 
+                </div>
+            </section>
+        </div>
+
+        <div id="popup_detailed_record" class="block__register_popup_active absolute block__register_popup">
+            <div id="popup_detailed_record_backdrop" class="bg-dark_color h-full w-full opacity-30"></div>
+            <div class="block__register_popup_content block__register_popup_content_active flex flex-col items-center w-[330px] h-[307px] bg-white ">
+                <div class="h-[5px] w-[60px] bg-grey_color mt-2 rounded-[17px]"></div>
+
+                <h3 class="text-[16px] font-montserrat font-normal text-center w-[212px] mt-[15px] mb-[30px]">Подробности об услуге</h3>
+
+                <div class="w-[280px] flex flex-col gap-5">
+                    <span class="block font-montserrat font-normal text-[16px]">Тип:
+                        <span class="font-montserrat font-semibold text-[16px]">Мужской</span>
+                    </span>
+                    <span class="block font-montserrat font-normal text-[16px]">Цена услуги:
+                        <span class="font-montserrat font-semibold text-[16px]">700</span>
+                    </span>
+                    <span class="block font-montserrat font-normal text-[16px]">Длительность :
+                        <span class="font-montserrat font-semibold text-[16px]">40 мин</span>
+                    </span>
+                </div>
+
+                <a href="/master_records.html"  class="flex justify-center items-center popup_cancel_next mt-[40px] w-[280px] h-[56px] bg-grey_color font-semibold text-[16px] font-montserrat rounded-[65px]">Хорошо</a>
+            </div>
+        </div> 
+    <script href="./master_info_3.js" defer></script>
+
+</body>
+</html>

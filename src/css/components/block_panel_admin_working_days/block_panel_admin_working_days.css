@@ -1,0 +1,60 @@
+.block_panel_admin_working_days_list {
+
+}
+.block_panel_admin_working_days_list_item {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.5px;
+
+    width: 100%;
+    display: flex;
+}
+.block_panel_admin_working_days_list_item-right {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.5px;
+
+    width: 150px;
+    display: flex;
+    justify-content: start;
+}
+.block_panel_admin_working_days_list_item-right:nth-child(2),.block_panel_admin_working_days_list_item-right:nth-child(4) {
+    opacity: 0.15;
+    font-size: 13px;
+}
+
+.block_panel_admin_working_days_list_item-right:nth-child(1),.block_panel_admin_working_days_list_item-right:nth-child(5) {
+    opacity: 0.15;
+    font-size: 10px;
+}
+.block_panel_admin_working_days_list_item:nth-child(2),.block_panel_admin_working_days_list_item:nth-child(4) {
+    opacity: 0.15;
+    font-size: 13px;
+}
+
+.block_panel_admin_working_days_list_item:nth-child(1),.block_panel_admin_working_days_list_item:nth-child(5) {
+    opacity: 0.15;
+    font-size: 10px;
+}
+.block_panel_admin_working_days_list_item-left:nth-child(2),.block_panel_admin_working_days_list_item-left:nth-child(4) {
+    opacity: 0.15;
+    font-size: 13px;
+}
+
+.block_panel_admin_working_days_list_item-left:nth-child(1),.block_panel_admin_working_days_list_item-left:nth-child(5) {
+    opacity: 0.15;
+    font-size: 10px;
+}
+
+.block_panel_admin_working_days_list_item-left {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.5px;
+
+    width: 150px;
+    display: flex;
+    justify-content: end;
+}

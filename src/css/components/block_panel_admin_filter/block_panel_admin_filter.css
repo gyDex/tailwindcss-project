@@ -1,0 +1,10 @@
+.block__filter_popup_content {
+    position: absolute;
+    bottom: 0px;
+    height: 80%;
+    box-shadow: 2px 5px 10.6px 0px #171C1F33;
+    border-radius: 25px 25px 0 0;
+    transition: 0.4s;
+
+    transform: translateY(125%);
+}

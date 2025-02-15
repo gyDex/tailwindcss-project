@@ -32,7 +32,50 @@ module.exports = {
     entry: {
         main: './index.js',
         master_info: './pages/master_info/master_info.js',
+        master_info_1: './pages/master_info/master_info_1.js',
+        master_info_2: './pages/master_info/master_info_2.js',
+        master_info_3: './pages/master_info/master_info_3.js',
         block_register: './js/block_register.js',
+        master_calendar: './pages/master_info/master_calendar/master_calendar.js',
+        master_records: './pages/master_info/master_records/master_records.js',
+        register_master: './pages/register_master/register_master.js',
+
+        auth_master: './pages/register_master/auth_master.js',
+        auth_master_1: './pages/register_master/auth_master_1.js',
+        auth_master_2: './pages/register_master/auth_master_2.js',
+        auth_master_3: './pages/register_master/auth_master_3.js',
+        auth_master_4: './pages/register_master/auth_master_4.js',
+        auth_master_5: './pages/register_master/auth_master_5.js',
+
+        panel_admin: './pages/panel_admin/panel_admin.js',
+        panel_admin_all: './pages/panel_admin/panel_admin_all.js',
+        panel_admin_edit: './pages/panel_admin/panel_admin_edit.js',
+        panel_admin_records: './pages/panel_admin/panel_admin_records.js',
+        panel_admin_about: './pages/panel_admin/panel_admin_about.js',
+        panel_admin_filter: './pages/panel_admin/panel_admin_filter.js',
+        panel_admin_working_days: './pages/panel_admin/panel_admin_working_days.js',
+        panel_admin_delete: './pages/panel_admin/panel_admin_delete.js',
+        panel_admin_1: './pages/panel_admin/panel_admin_1.js',
+        panel_admin_add: './pages/panel_admin/panel_admin_add.js',
+        panel_admin_add_popup: './pages/panel_admin/panel_admin_add_popup.js',
+
+        register_admin: './pages/register_admin/register_admin.js',
+        register_admin_1: './pages/register_admin/register_admin_1.js',
+        register_admin_2: './pages/register_admin/register_admin_2.js',
+        register_admin_3: './pages/register_admin/register_admin_3.js',
+        register_admin_4: './pages/register_admin/register_admin_4.js',
+        register_admin_5: './pages/register_admin/register_admin_5.js',
+        service_management: './pages/service_management/service_management.js',
+        service_management_add: './pages/service_management/service_management_add.js',
+    
+        service_management_add_duration_popup: './pages/service_management/service_management_add_duration_popup.js',
+        service_management_add_popup: './pages/service_management/service_management_add_popup.js',
+
+        register_client: './pages/register_client/register_client.js',
+        register_client_1: './pages/register_client/register_client_1.js',
+        register_client_2: './pages/register_client/register_client_2.js',
+        register_client_3: './pages/register_client/register_client_3.js',
+        register_client_4: './pages/register_client/register_client_4.js',
     },
     output: {
         filename: '[name].[contenthash].js',
@@ -49,15 +92,245 @@ module.exports = {
         }),
         new HtmlWebpackPlugin(
         {
+            filename: 'register_admin.html',
+            template: './pages/register_admin/register_admin.html',
+            chunks: ['register_admin'],
+        }),
+        new HtmlWebpackPlugin(
+        {
+            filename: 'register_client_4.html',
+            template: './pages/register_client/register_client_4.html',
+            chunks: ['register_client_4'],
+        }),
+        new HtmlWebpackPlugin(
+        {
+            filename: 'register_client_3.html',
+            template: './pages/register_client/register_client_3.html',
+            chunks: ['register_client_3'],
+        }),
+        new HtmlWebpackPlugin(
+        {
+            filename: 'register_client_2.html',
+            template: './pages/register_client/register_client_2.html',
+            chunks: ['register_client_2'],
+        }),
+        new HtmlWebpackPlugin(
+        {
+            filename: 'register_client.html',
+            template: './pages/register_client/register_client.html',
+            chunks: ['register_client'],
+        }),
+        new HtmlWebpackPlugin(
+        {
+            filename: 'register_client_1.html',
+            template: './pages/register_client/register_client_1.html',
+            chunks: ['register_client_1'],
+        }),
+        new HtmlWebpackPlugin(
+        {
+            filename: 'service_management_add_popup.html',
+            template: './pages/service_management/service_management_add_popup.html',
+            chunks: ['service_management_add_popup'],
+        }),
+        new HtmlWebpackPlugin(
+        {
+            filename: 'service_management_add_duration_popup.html',
+            template: './pages/service_management/service_management_add_duration_popup.html',
+            chunks: ['service_management_add_duration_popup'],
+        }),
+        new HtmlWebpackPlugin(
+        {
+            filename: 'service_management_add.html',
+            template: './pages/service_management/service_management_add.html',
+            chunks: ['service_management_add'],
+        }),
+        new HtmlWebpackPlugin(
+        {
+            filename: 'service_management.html',
+            template: './pages/service_management/service_management.html',
+            chunks: ['service_management'],
+        }),
+        new HtmlWebpackPlugin(
+        {
+            filename: 'register_admin_1.html',
+            template: './pages/register_admin/register_admin_1.html',
+            chunks: ['register_admin_1'],
+        }),
+        new HtmlWebpackPlugin(
+        {
+            filename: 'register_admin_2.html',
+            template: './pages/register_admin/register_admin_2.html',
+            chunks: ['register_admin_2'],
+        }),
+        new HtmlWebpackPlugin(
+        {
+            filename: 'register_admin_3.html',
+            template: './pages/register_admin/register_admin_3.html',
+            chunks: ['register_admin_3'],
+        }),
+        new HtmlWebpackPlugin(
+        {
+            filename: 'register_admin_5.html',
+            template: './pages/register_admin/register_admin_5.html',
+            chunks: ['register_admin_5'],
+        }),
+        new HtmlWebpackPlugin(
+        {
+            filename: 'register_admin_4.html',
+            template: './pages/register_admin/register_admin_4.html',
+            chunks: ['register_admin_4'],
+        }),
+        new HtmlWebpackPlugin(
+        {
             filename: 'master_info.html',
             template: './pages/master_info/master_info.html',
             chunks: ['master_info'],
         }),
+
+        new HtmlWebpackPlugin(
+        {
+            filename: 'master_info_1.html',
+            template: './pages/master_info/master_info_1.html',
+            chunks: ['master_info_1'],
+        }),
+
+        new HtmlWebpackPlugin(
+        {
+            filename: 'master_info_2.html',
+            template: './pages/master_info/master_info_2.html',
+            chunks: ['master_info_2'],
+        }),
+        new HtmlWebpackPlugin(
+        {
+            filename: 'master_info_3.html',
+            template: './pages/master_info/master_info_3.html',
+            chunks: ['master_info_3'],
+        }),
+        new HtmlWebpackPlugin(
+            {
+                filename: 'panel_admin_1.html',
+                template: './pages/panel_admin/panel_admin_1.html',
+                chunks: ['panel_admin_1'],
+            }),
         new HtmlWebpackPlugin(
         {
             filename: 'register_master.html',
             template: './pages/register_master/register_master.html',
             chunks: ['register_master'],
+        }),
+        new HtmlWebpackPlugin(
+        {
+            filename: 'panel_admin_add_popup.html',
+            template: './pages/panel_admin/panel_admin_add_popup.html',
+            chunks: ['panel_admin_add_popup'],
+        }),
+        new HtmlWebpackPlugin(
+        {
+            filename: 'panel_admin_add.html',
+            template: './pages/panel_admin/panel_admin_add.html',
+            chunks: ['panel_admin_add'],
+        }),
+        new HtmlWebpackPlugin(
+        {
+            filename: 'panel_admin_delete.html',
+            template: './pages/panel_admin/panel_admin_delete.html',
+            chunks: ['panel_admin_delete'],
+        }),
+        new HtmlWebpackPlugin(
+        {
+            filename: 'panel_admin.html',
+            template: './pages/panel_admin/panel_admin.html',
+            chunks: ['panel_admin'],
+        }),
+        new HtmlWebpackPlugin(
+        {
+            filename: 'panel_admin_edit.html',
+            template: './pages/panel_admin/panel_admin_edit.html',
+            chunks: ['panel_admin_edit'],
+        }),
+
+        new HtmlWebpackPlugin(
+        {
+            filename: 'panel_admin_about.html',
+            template: './pages/panel_admin/panel_admin_about.html',
+            chunks: ['panel_admin_about'],
+        }),
+
+        new HtmlWebpackPlugin(
+        {
+            filename: 'panel_admin_filter.html',
+            template: './pages/panel_admin/panel_admin_filter.html',
+            chunks: ['panel_admin_filter'],
+        }),
+
+        new HtmlWebpackPlugin(
+            {
+                filename: 'panel_admin_working_days.html',
+                template: './pages/panel_admin/panel_admin_working_days.html',
+                chunks: ['panel_admin_working_days'],
+            }),
+
+        new HtmlWebpackPlugin(
+        {
+            filename: 'panel_admin_records.html',
+            template: './pages/panel_admin/panel_admin_records.html',
+            chunks: ['panel_admin_records'],
+        }),
+        new HtmlWebpackPlugin(
+            {
+                filename: 'panel_admin_all.html',
+                template: './pages/panel_admin/panel_admin_all.html',
+                chunks: ['panel_admin_all'],
+            }),
+
+        new HtmlWebpackPlugin(
+        {
+            filename: 'auth_master.html',
+            template: './pages/register_master/auth_master.html',
+            chunks: ['auth_master'],
+        }),
+        new HtmlWebpackPlugin(
+        {
+            filename: 'auth_master_1.html',
+            template: './pages/register_master/auth_master_1.html',
+            chunks: ['auth_master_1'],
+        }),
+        new HtmlWebpackPlugin(
+        {
+            filename: 'auth_master_2.html',
+            template: './pages/register_master/auth_master_2.html',
+            chunks: ['auth_master_2'],
+        }),
+        new HtmlWebpackPlugin(
+        {
+            filename: 'auth_master_3.html',
+            template: './pages/register_master/auth_master_3.html',
+            chunks: ['auth_master_3'],
+        }),
+
+        new HtmlWebpackPlugin(
+        {
+            filename: 'auth_master_5.html',
+            template: './pages/register_master/auth_master_5.html',
+            chunks: ['auth_master_5'],
+        }),
+        new HtmlWebpackPlugin(
+        {
+            filename: 'auth_master_4.html',
+            template: './pages/register_master/auth_master_4.html',
+            chunks: ['auth_master_4'],
+        }),
+        new HtmlWebpackPlugin(
+        {
+            filename: 'master_records.html',
+            template: './pages/master_info/master_records/master_records.html',
+            chunks: ['master_records'],
+        }),
+        new HtmlWebpackPlugin(
+        {
+            filename: 'master_calendar.html',
+            template: './pages/master_info/master_calendar/master_calendar.html',
+            chunks: ['master_calendar'],
         }),
         new HtmlWebpackPlugin(
         {

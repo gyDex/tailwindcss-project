@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bg-[#F5F5F5] relative flex justify-center h-full w-full">
+        <div class="absolute lg:rounded-[10px] bg-white h-full w-full max-w-[600px]">
+            <div class="absolute w-full h-full p-5 flex flex-col">
+                <div class="w-[100%] items-center flex justify-start">
+                    <h1 class="block__master_info_title">Управление записями</h1>
+                </div>
+    
+                <div class="w-full my-[10px]">
+                    <div class="w-full flex justify-between">
+                        <div class="flex gap-2">
+                            <img src="../../assets/image/panel_admin/filter.svg" alt="filter">
+                            <h3 class="font-montserrat font-normal text-[16px] ">Фильтры</h3>
+
+                        </div>
+
+                        <div class="flex gap-2">
+                            <select class="block__panel_admin_all_select" name="block__register_business_format" id="block__register_business_format">
+                                <option value="Барбер" class="font-montserrat font-normal text-[16px]">Дата</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="w-full flex flex-col gap-5">
+                    <li class="bg-grey_color w-full flex flex-col rounded-[7px] h-[121px] p-3">
+                        <div class="w-full flex justify-between flex-1">
+                            <div>
+                                <span class="block font-montserrat font-normal text-[14px]">Дата и время:
+                                    <span class="font-semibold">
+                                        17 Фев, 13:20
+                                    </span> 
+                                </span>
+
+                                <span class="block font-montserrat font-normal text-[14px]">Клиент:
+                                    <span class="font-semibold">
+                                        Настя
+                                    </span> 
+                                </span>
+                            </div>
+
+                            <div class="panel_admin_records">
+                                <label class="checkbox">
+                                    <input class="checkbox-input" type="checkbox" id="myCheckbox">
+                                    <div class="checkbox-new">
+                                        <div class="checkbox-new_unchecked">
+                                        </div>
+                                        <div class="checkbox-new_checked">
+                                            <img src="../../assets/image/panel_admin/check.svg" alt="check">
+                                        </div>
+                                        
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="w-ful flex justify-between flex-shrink-0">
+                            <button class=" font-montserrat font-normal text-[14px] text-red_color">Отменить</button>
+
+                            <h3 class="font-montserrat font-normal text-[14px]">14.02.2025</h3>
+                        </div>
+                    </li>
+
+                    <li class="bg-grey_color w-full flex flex-col rounded-[7px] h-[121px] p-3">
+                        <div class="w-full flex justify-between flex-1">
+                            <div>
+                                <span class="block font-montserrat font-normal text-[14px]">Дата и время:
+                                    <span class="font-semibold">
+                                        17 Фев, 13:20
+                                    </span> 
+                                </span>
+
+                                <span class="block font-montserrat font-normal text-[14px]">Клиент:
+                                    <span class="font-semibold">
+                                        Настя
+                                    </span> 
+                                </span>
+                            </div>
+
+                            <div class="panel_admin_records">
+                                <label class="checkbox">
+                                    <input class="checkbox-input" type="checkbox" id="myCheckbox">
+                                    <div class="checkbox-new">
+                                        <div class="checkbox-new_unchecked">
+                                        </div>
+                                        <div class="checkbox-new_checked">
+                                            <img src="../../assets/image/panel_admin/check.svg" alt="check">
+                                        </div>
+                                        
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="w-ful flex justify-between flex-shrink-0">
+                            <button class=" font-montserrat font-normal text-[14px]">Отменено</button>
+
+                            <h3 class="font-montserrat font-normal text-[14px]">14.02.2025</h3>
+                        </div>
+                    </li>
+
+                    <li class="bg-grey_color w-full flex flex-col rounded-[7px] h-[121px] p-3">
+                        <div class="w-full flex justify-between flex-1">
+                            <div>
+                                <span class="block font-montserrat font-normal text-[14px]">Дата и время:
+                                    <span class="font-semibold">
+                                        17 Фев, 13:20
+                                    </span> 
+                                </span>
+
+                                <span class="block font-montserrat font-normal text-[14px]">Клиент:
+                                    <span class="font-semibold">
+                                        Настя
+                                    </span> 
+                                </span>
+                            </div>
+
+                            <div class="panel_admin_records">
+                                <label class="checkbox">
+                                    <input class="checkbox-input" type="checkbox" id="myCheckbox">
+                                    <div class="checkbox-new">
+                                        <div class="checkbox-new_unchecked">
+                                        </div>
+                                        <div class="checkbox-new_checked">
+                                            <img src="../../assets/image/panel_admin/check.svg" alt="check">
+                                        </div>
+                                        
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="w-ful flex justify-between flex-shrink-0">
+                            <span class=" font-montserrat font-normal text-[14px] ">Завершено</span>
+
+                            <h3 class="font-montserrat font-normal text-[14px]">14.02.2025</h3>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="block__register_popup_active absolute block__register_popup">
+            <div id="popup_detailed_record_backdrop" class="bg-dark_color h-full w-full opacity-30"></div>
+            <div  class="block__filter_popup_content block__register_popup_content_active flex flex-col items-center translate-x-[100px] bottom-0 w-[100%] max-w-[600px] h-[307px] bg-white ">
+                <div class="h-[5px] w-[60px] bg-grey_color mt-2 rounded-[17px]"></div>
+
+                <h3 class="text-[16px] font-montserrat font-normal text-center w-[212px] mt-[15px]">Фильтры</h3>
+
+                <div class="px-5 w-full flex-1">
+                    <div class="w-full flex flex-col">
+                        <input type="text" class="block__register_input"  placeholder="Имя">
+                        <input type="text" class="block__register_input"  placeholder="Давность">
+                        <input type="text" class="block__register_input"  placeholder="Дата записи">
+    
+                        
+                    </div>
+    
+                    
+                </div>
+
+                <div class="flex-shrink-0 px-5 w-full flex justify-between mb-5">
+                    <a href="/auth_master.html" class=" flex justify-center items-center  bg-grey_color h-[56px] w-[150px] rounded-[65px] text-[16px] font-montserrat font-medium">Назад</a>
+                    <a   href="/auth_master_2.html" class=" flex justify-center items-center button_next_stage_register bg-dark_color h-[56px] w-[150px] rounded-[65px] text-[16px] font-medium text-white">Применить</a>
+                </div>
+            </div>
+        </div> 
+
+    <script href="./panel_admin_filter.js" defer></script>
+</body>
+</html>
