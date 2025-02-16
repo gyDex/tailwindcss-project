@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const MiniCssExractPlugin = require('mini-css-extract-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserWebpackPlugin = require("terser-webpack-plugin");
@@ -340,7 +340,7 @@ module.exports = {
         }),
         new CleanWebpackPlugin(),
         // new CopyWebpackPlugin(),
-        new MiniCssExractPlugin(
+        new MiniCssExtractPlugin(
             {
                 filename: '[name].[contenthash].css'
             }
@@ -382,12 +382,13 @@ module.exports = {
             {
                 test: /\.css$/i,
                 use: [
-                    `style-loader`
+                    MiniCssExtractPlugin.loader,
                     , 
                     {
                         loader:'css-loader',
                     }, 
-                    'postcss-loader'
+                    'postcss-loader',
+                    
                     ],
                 exclude: /node_modules/,
             },
