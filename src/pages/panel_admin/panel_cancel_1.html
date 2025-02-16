@@ -147,32 +147,18 @@
             </div>
         </div>
 
-        <div class="block__popup_active absolute block__popup">
-            <div id="popup_detailed_record_backdrop" class="bg-dark_color h-full w-full opacity-30"></div>
-            <div  class="block__filter_popup_content block__popup_content_active flex flex-col items-center translate-x-[100px] bottom-0 w-[100%] max-w-[600px] h-[307px] bg-white ">
-                <div class="h-[5px] w-[60px] bg-grey_color mt-2 rounded-[17px]"></div>
-
-                <h3 class="text-[16px] font-montserrat font-normal text-center w-[212px] mt-[15px]">Фильтры</h3>
-
-                <div class="px-5 w-full flex-1">
-                    <div class="w-full flex flex-col">
-                        <input type="text" class="block__register_input"  placeholder="Имя">
-                        <input type="text" class="block__register_input"  placeholder="Давность">
-                        <input type="text" class="block__register_input"  placeholder="Дата записи">
+        <div id="popup_cancel" class="fixed block__popup block__popup_active">
+            <div class="bg-dark_color h-full w-full opacity-30"></div> 
+                <div class=" popup_cancel_content  block__popup_content block__popup_content _active flex flex-col items-center w-[330px] min-h-[245px] bg-white ">
+                    <div class="h-[5px] w-[60px] bg-grey_color mt-2 rounded-[17px]"></div>
+                    <img class="w-[57px] h-[57px] my-[20px]" src="../../assets/image/block_master_info/cross_circle.svg" height="57px" width="57px" alt="">
     
-                        
-                    </div>
+                    <h3 class="text-[16px] font-montserrat font-normal text-center w-[280px] mb-[30px] my-[20px]">Вы отменили запись</h3>
     
-                    
-                </div>
-
-                <div class="flex-shrink-0 px-5 w-full flex justify-between mb-5">
-                    <a href="/auth_master.html" class=" flex justify-center items-center  bg-grey_color h-[56px] w-[150px] rounded-[65px] text-[16px] font-montserrat font-medium">Назад</a>
-                    <a   href="/auth_master_2.html" class=" flex justify-center items-center button_next_stage_register bg-dark_color h-[56px] w-[150px] rounded-[65px] text-[16px] font-medium text-white">Применить</a>
-                </div>
-            </div>
+                    <button  class="popup_cancel_close_modal w-[280px] h-[56px] bg-grey_color font-semibold text-[16px] font-montserrat rounded-[65px] mb-[20px]">Хорошо</button>
+                </div>       
         </div> 
 
-    <script href="./panel_admin_filter.js" defer></script>
+    <script href="./panel_admin_records.js" defer></script>
 </body>
 </html>

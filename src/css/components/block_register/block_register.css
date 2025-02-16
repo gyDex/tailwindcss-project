@@ -92,7 +92,7 @@
     font-size: 16px;
 }
 
-.block__register_popup {
+.block__popup {
     position: fixed;
     display: flex;
     width: 100%;
@@ -102,20 +102,20 @@
 
     transition: 0.4s;
 }
-.block__register_popup_content_active {
+.block__popup_content_active {
     transform: translateY(0%) !important;
 }
-.block__register_popup_active {
+.block__popup_active {
     z-index: 100 !important;
 }
-.block__register_popup_backdrop {
+.block__popup_backdrop {
     position: absolute;
     /* z-index: 1000; */
     width: inherit;
     height: inherit;
     background-color: red;
 }
-.block__register_popup_content {
+.block__popup_content {
     position: absolute;
     bottom: 25px;
     box-shadow: 2px 5px 10.6px 0px #171C1F33;
