@@ -117,6 +117,12 @@ module.exports = {
         }),
         new HtmlWebpackPlugin(
         {
+            filename: 'panel_master.html',
+            template: './pages/panel_master/panel_master.html',
+            chunks: ['panel_admin'],
+        }),
+        new HtmlWebpackPlugin(
+        {
             filename: 'register_client_1.html',
             template: './pages/register_client/register_client_1.html',
             chunks: ['register_client'],
